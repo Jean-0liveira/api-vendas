@@ -1,0 +1,25 @@
+name: Primeiro Workflow
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Mostrar versão do Node e listar arquivos
+        run: |
+          node --version
+          echo "Pipeline executada com sucesso!"
+          ls -la

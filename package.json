@@ -1,0 +1,13 @@
+{
+  "name": "api-vendas",
+  "version": "1.0.0",
+  "description": "API de vendas online com Node.js, Express e Postgres",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
